@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  grid-template-columns:  repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1em;
+}
+.item > img {
+  width: 100%;
+  border-radius: 1em;
+}
