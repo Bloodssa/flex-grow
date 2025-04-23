@@ -1,9 +1,75 @@
-.container {
-  display: grid;
-  grid-template-columns:  repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1em;
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
 }
-.item > img {
-  width: 100%;
-  border-radius: 1em;
+.container {
+    display: flex;
+    width: 90%;
+    height: 700px;
+    gap: 1em;
+    position: absolute;
+    top: 8%;
+    left: 4.4%;
+}
+.item {
+    flex-grow: 1;
+    border-radius: 1em;
+    background-color: aliceblue;
+    border: 2px solid black;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+button {
+    padding: 9px 1.5em;
+    border-radius: 20px;
+    background-color: #f00909;
+    color: #f8f800;
+    border: 2px solid #000000;
+    margin-top: 550px;
+}
+.h1 {
+    color: #f70000;
+    width: 90%;
+    margin-top: 500px;
+    font-size: 43px;
+    letter-spacing: 5px;
+    display: none;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    border-radius: 1em;
+    margin-left: 38px;
+    border: 2px solid #000000;
+}
+/* HOVER */
+.item:hover {flex-grow: 3.7;}
+.item:hover .h1 {display: block; }
+.item:hover button{margin-top: 10px;}
+.container:hover .item:not(:hover) {filter: grayscale(1) blur(5px);}
+
+.item1 {
+    background-image: url(https://images.alphacoders.com/122/1226564.jpg);
+    background-size: 100% 100%;
+    flex: 1;
+}
+.item2 {
+    background-image: url(https://motionbgs.com/media/1250/the-king-of-hell-one-piece.jpg);
+    background-size: 100% 100%;
+}
+.item3 {
+    background-image: url(https://i.pinimg.com/1200x/7f/4d/0f/7f4d0f9f65c6aa8714dbd46bcb48f6d5.jpg);
+    background-size: 100% 100%;
+}
+.item4 {
+    background-image: url(https://images6.alphacoders.com/122/1225550.jpg);
+    background-size: 100% 100%;
+}
+.item5 {
+    background-image: url(https://preview.redd.it/brook-future-feats-discussion-v0-g8tfxr6ztvta1.jpg?width=1080&format=pjpg&auto=webp&s=59b60e23eb091632871883f33f36ec750f39bd7e);
+    background-size: 100% 100%;
 }
